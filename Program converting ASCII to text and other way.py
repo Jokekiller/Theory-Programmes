@@ -2,11 +2,21 @@
 #30-09-2014
 #Program converting ASCII to text and other way
 
-numberConverted = print("Do you want to convert an ASCII code or a text character? ASCII or Textcharacter")
-if numberConverted == ASCII:
-    ASCIINumber = chr(numberConverted)
-    print("ASCII in text character is {0}".format(ASCIINumber))
-if numberConverted == Textcharacter:
-    textNumber = ord(numberConverted)
-    print("Text number in ASCII code is {0}".format(textNumber))
-    
+print("Do you want to convert an ASCII code ? (y/n)")
+response = input()
+if response == "y":
+    ASCIINumber = int(input("Give an ASCII number"))
+    ASCIINumberConverted = chr(ASCIINumber)
+    print("The ASCII number is {0} in text characters.".format(ASCIINumberConverted))
+
+
+if response == "n":
+    print("Do you want to convert a text character? (y/n)")
+    response2 = input()
+    if response2 == "y":
+        textNumber = int(input("Give text character"))
+        textNumberConverted = ord(textNumber)
+
+        print("Text character is {1}".format(textNumberConverted))
+        
+
