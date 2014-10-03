@@ -16,7 +16,6 @@ if response == "n":
     if response2 == "y":
         textNumber = int(input("Give text character"))
         textNumberConverted = ord(textNumber)
-
         print("Text character is {1}".format(textNumberConverted))
         
 
