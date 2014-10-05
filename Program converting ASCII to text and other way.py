@@ -14,9 +14,11 @@ if response == "n":
     print("Do you want to convert a text character? (y/n)")
     response2 = input()
     if response2 == "y":
-        textNumber = int(input("Give text character"))
-        textNumberConverted = ord(textNumber)
+        textNumber = input("Give text character: ")
 
-        print("Text character is {1}".format(textNumberConverted))
+        textNumberConverted = ord(textNumber)
+        print("The ASCII code is {0}".format(textNumberConverted))
+
+       
         
 
